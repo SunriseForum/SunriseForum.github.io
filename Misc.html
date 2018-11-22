@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<footer><a href = "SunriseHomepage.hmtl.html">Home</a></footer>
+	<title>Sunrise Forum</title>
+
+        
+<center><body>
+		<style>
+.parallax { 
+    
+    background-image: url("sunrise.jpg");
+
+    
+    height: 500px; <ul></ul>
+
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+
+<!-- Container element -->
+<div class="parallax"></div>
+	
+
+	
+  <p>
+  <h1>Miscellaneous</h1>
+  </p>
+  <input type="text" id="text" value="write">
+  <button onclick="PostFunc()"> Post </button>
+  <hr>
+  <p id="all_posts"></p>
+	
+  <script>
+    function PostFunc() {
+      document
+        .getElementById("all_posts")
+        .insertAdjacentHTML(
+          "afterend",
+          `${document.getElementById("text").value}<hr>`
+        );
+    }
+  </script>
+	
+	</body> </center>
+
+</html>
